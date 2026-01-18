@@ -17,6 +17,9 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Run Python files
+      - name: Run all Python files in 2026 folder
         run: |
-          python --version
+          for file in 2026/*.py; do
+            echo "Running $file"
+            python "$file"
+          done
