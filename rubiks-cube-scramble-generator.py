@@ -17,3 +17,6 @@ def scramble_cube(moves, moves_per_line):
         scramble += f"{face}{mod} {newline}"
         prev = face
     print(scramble)
+
+if __name__ == "__main__":
+    scramble_cube(20, 5)
