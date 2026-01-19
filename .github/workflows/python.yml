@@ -1,7 +1,10 @@
 name: Python CI
 
 on:
+  workflow_dispatch:
   push:
+    branches:
+      - main
   pull_request:
 
 jobs:
@@ -15,11 +18,12 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: '3.14'
 
-      - name: Run all Python files in 2026 folder
+      - name: Run all Python files
         run: |
-          for file in 2026/*.py; do
+          # Find all Python files in the repo
+          for file in $(find . -name "*.py"); do
             echo "Running $file"
             python "$file"
           done
