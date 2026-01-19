@@ -9,7 +9,7 @@ def scramble_cube(moves_per_scramble, num_scrambles, moves_per_line):
         prev = ""
         face = ""
         newline = ""
-        for i in range(moves):
+        for i in range(moves_per_scramble):
             if (i + 1) % moves_per_line == 0:
                 newline = "\n"
             else:
