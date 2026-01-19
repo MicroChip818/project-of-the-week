@@ -40,4 +40,4 @@ if __name__ == "__main__":
     num_scrambles = get_int(2, DEFAULT_NUM_SCRAMBLES, "number of scrambles")
     moves_per_line = get_int(3, DEFAULT_MOVES_PER_LINE, "moves per line")
 
-    scramble_cube(moves_per_scramble, moves_per_line, num_scrambles)
+    scramble_cube(moves_per_scramble, num_scrambles, moves_per_line)
