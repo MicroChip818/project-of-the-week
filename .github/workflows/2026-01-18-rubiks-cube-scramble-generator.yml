@@ -1,0 +1,23 @@
+name: Run Rubik's Cube Scramble Generator
+
+on:
+  push:
+    paths:
+      - "2026/01-18-rubiks-cube-scramble-generator.py"
+
+jobs:
+  run-python:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run scramble generator
+        run: |
+          python "2026/01-18-rubiks-cube-scramble-generator.py"
