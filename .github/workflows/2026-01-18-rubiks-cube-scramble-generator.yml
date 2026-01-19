@@ -1,4 +1,4 @@
-name: Run Rubik's Cube Scramble Generator
+name: Rubik's Cube Scramble Generator
 
 on:
   push:
