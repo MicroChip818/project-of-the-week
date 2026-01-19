@@ -1,7 +1,7 @@
 import random
 import sys
 
-def scramble_cube(moves_per_scramble, num_scrambles, moves_per_line): # If you want to copy the code, copy lines 1 and 4-23, then call the function with your own parameters
+def scramble_cube(moves_per_scramble, num_scrambles, moves_per_line): # If you want to copy the code, copy lines 1 and 4-23, then call the function with your own arguments
     faces = ["F", "B", "U", "D", "L", "R"] # All 6 possible faces
     modifiers = ["", "'", "2"] # 2 possible modifiers
     for i in range(num_scrambles): # Repeat this for every scramble
