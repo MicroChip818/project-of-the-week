@@ -5,6 +5,19 @@ on:
     paths:
       - "2026/01-18-rubiks-cube-scramble-generator.py"
   workflow_dispatch:
+    inputs:
+      moves_per_scramble:
+        description: "Number of moves per scramble"
+        required: false
+        default: 20
+      num_scrambles:
+        description: "Number of scrambles"
+        required: false
+        default: 3
+      moves_per_line:
+        description: "Moves per line"
+        required: false
+        default: 5
 
 jobs:
   run:
