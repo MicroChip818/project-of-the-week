@@ -3,7 +3,7 @@ name: Rubik's Cube Scramble Generator
 on:
   push:
     paths:
-      - "2026/01-18-rubiks-cube-scramble-generator.py"
+      - "2026/python/01-18-rubiks-cube-scramble-generator.py"
   workflow_dispatch:
     inputs:
       moves_per_scramble:
